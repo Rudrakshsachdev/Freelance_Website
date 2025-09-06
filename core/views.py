@@ -143,6 +143,8 @@ def homepage(request):
         """
 
         try:
+            print("Sending email...")
+            print(f"From: {os.environ.get('EMAIL_HOST_USER')}, To: {email}")
             send_mail(
                 subject,
                 body,
