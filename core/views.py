@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 from FreeLance_Website.settings import EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
+import os
 
 
 # def homepage(request):
@@ -70,7 +71,7 @@ def homepage(request):
         send_mail(
             subject,
             body,
-            from_email = EMAIL_HOST_USER,
+            from_email = os.environ.get('EMAIL_HOST_USER'),
             recipient_list = [email],
             fail_silently = False,
         )
