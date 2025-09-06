@@ -67,7 +67,7 @@ def homepage(request):
         Warm regards,  
         **The R&P Innovations Team**
         """
-
+    try:
         send_mail(
             subject,
             body,
@@ -75,14 +75,19 @@ def homepage(request):
             recipient_list = [email],
             fail_silently = False,
         )
+    except Exception as e:
+        print(f"Error sending email: {e}")
+        return JsonResponse({'success': False, 'message': 'Failed to send confirmation email. Please try again later.'})
 
-        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
             return JsonResponse({'success': True, 'message': 'Message sent successfully'})
-        return render(request, 'home.html', {'success': 'Message sent successfully'})
+    return render(request, 'home.html', {'success': 'Message sent successfully'})
     
         
 
     return render(request, 'home.html')
+
 
 def privacy_policy(request):
     return render(request, 'privacy_policy.html')
