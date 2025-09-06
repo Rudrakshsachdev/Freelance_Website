@@ -153,7 +153,9 @@ def homepage(request):
                 fail_silently=False,
             )
         except Exception as e:
-            print(f"Error sending email: {e}")
+            import traceback
+            print("❌ Error sending email:", e)
+            traceback.print_exc()
             return JsonResponse({'success': False, 'message': 'Failed to send confirmation email. Please try again later.'})
 
         if request.headers.get('x-requested-with') == 'XMLHttpRequest':
