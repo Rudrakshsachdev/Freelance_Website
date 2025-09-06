@@ -1,0 +1,734 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>R&P Innovations - We Build Websites</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional web development agency creating affordable, fast, and professional websites for startups, freelancers, and local businesses."
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo" aria-label="Freelance Agency Home">
+            <span class="logo-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2L28 10.6667V21.3333L16 30L4 21.3333V10.6667L16 2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16 10.6667C18.2091 10.6667 20 8.87581 20 6.66667C20 4.45753 18.2091 2.66667 16 2.66667C13.7909 2.66667 12 4.45753 12 6.66667C12 8.87581 13.7909 10.6667 16 10.6667Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M24 16C25.1046 16 26 15.1046 26 14C26 12.8954 25.1046 12 24 12C22.8954 12 22 12.8954 22 14C22 15.1046 22.8954 16 24 16Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 16C9.10457 16 10 15.1046 10 14C10 12.8954 9.10457 12 8 12C6.89543 12 6 12.8954 6 14C6 15.1046 6.89543 16 8 16Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M28 20C29.1046 20 30 19.1046 30 18C30 16.8954 29.1046 16 28 16C26.8954 16 26 16.8954 26 18C26 19.1046 26.8954 20 28 20Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M4 20C5.10457 20 6 19.1046 6 18C6 16.8954 5.10457 16 4 16C2.89543 16 2 16.8954 2 18C2 19.1046 2.89543 20 4 20Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+            R&P <span>Innovations</span>
+          </a>
+          <ul class="nav-links">
+            <li>
+              <a href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li>
+              <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+            </li>
+            <li>
+              <a href="#pricing"><i class="fas fa-tag"></i> Pricing</a>
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><i class="fas fa-briefcase"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#process"><i class="fas fa-tasks"></i> Process</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+          </ul>
+          <button class="menu-btn" aria-label="Toggle navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="main-content">
+      <div class="hero-background">
+        <div class="hero-particles" id="particles-js"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            We Build Websites That
+            <span class="text-gradient">Grow Your Business</span>
+          </h1>
+          <p class="hero-subtitle">
+            Affordable, fast, and professional websites for startups,
+            freelancers, and local businesses.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+            <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+          </div>
+          <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-subtitle">Learn what makes us different</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-wrapper">
+              {% comment %} <img
+                src="{% static 'images/about_team.jpg' %}"
+                alt="Our team working together"
+                onerror="this.style.display='none'"
+              /> {% endcomment %}
+              <div class="image-placeholder">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              We are two friends — a developer and a client manager — united by
+              passion, trust, and creativity. Together, we craft professional
+              websites that don’t just work, but tell your story, connect with
+              your audience, and bring your vision to life. With our teamwork,
+              every project is personalized, reliable, and designed to exceed
+              expectations.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Technical Excellence</h3>
+                  <p>Clean, efficient code that follows best practices</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Dedicated Support</h3>
+                  <p>We're here for you even after project completion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">Everything you need to succeed online</p>
+        </div>
+        <div class="service-cards">
+          <div class="service-card">
+            <div class="card-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Basic Portfolio Websites</h3>
+            <p>Professional online presence with 3-5 custom designed pages</p>
+            <small>Ideal for: Freelancers, Artists, Photographers</small>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Responsive Design</li>
+              <li><i class="fas fa-check"></i> SEO Optimization</li>
+              <li><i class="fas fa-check"></i> Contact Form</li>
+              <li><i class="fas fa-check"></i> Social Media Integration</li>
+              <li><i class="fas fa-check"></i> 3 Months Free Support</li>
+              <li><i class="fas fa-check"></i> 1 Month Deployment Free</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Dynamic Websites</h3>
+            <p>
+              Interactive websites with database functionality and admin panel
+            </p>
+            <small>Ideal for: Businesses, Organizations, Blogs</small>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Content Management System</li>
+              <li><i class="fas fa-check"></i> User Authentication</li>
+              <li><i class="fas fa-check"></i> Database Integration</li>
+              <li><i class="fas fa-check"></i> Custom Functionality</li>
+              <li><i class="fas fa-check"></i> 3 Months Free Support</li>
+              <li><i class="fas fa-check"></i> 1 Month Deployment Free</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>E-commerce Stores</h3>
+            <p>Complete online stores with secure payment processing</p>
+            <small>Ideal for: Retailers, Product Sellers</small>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Product Catalog</li>
+              <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
+              <li><i class="fas fa-check"></i> Inventory Management</li>
+              <li><i class="fas fa-check"></i> Order Tracking</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Custom Solutions</h3>
+            <p>Tailor-made web applications for your specific needs</p>
+            <small>Ideal for: Startups, SaaS, Unique Requirements</small>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Custom Development</li>
+              <li><i class="fas fa-check"></i> API Integration</li>
+              <li><i class="fas fa-check"></i> Scalable Architecture</li>
+              <li><i class="fas fa-check"></i> Ongoing Maintenance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Pricing Plans</h2>
+          <p class="section-subtitle">
+            Choose the perfect plan for your business
+          </p>
+        </div>
+        <div class="pricing-cards">
+          <div class="price-card">
+            <div class="price-header">
+              <h3>Basic</h3>
+              <div class="price">₹5,000</div>
+              <small>One-time payment</small>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Up to 5 Pages</li>
+                <li><i class="fas fa-check"></i> Responsive Design</li>
+                <li><i class="fas fa-check"></i> Contact Form</li>
+                <li><i class="fas fa-check"></i> Basic SEO</li>
+                <li><i class="fas fa-check"></i> 3 Months Free Maintenance</li>
+                <li><i class="fas fa-check"></i> 1 Month Deployment Free</li>
+                <li><i class="fas fa-times"></i> CMS Integration</li>
+                <li><i class="fas fa-times"></i> E-commerce Functionality</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get Started</a>
+          </div>
+          <div class="price-card featured">
+            <div class="price-badge">Most Popular</div>
+            <div class="price-header">
+              <h3>Standard</h3>
+              <div class="price">₹10,000</div>
+              <small>One-time payment</small>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Up to 10 Pages</li>
+                <li><i class="fas fa-check"></i> Responsive Design</li>
+                <li><i class="fas fa-check"></i> Contact Form</li>
+                <li><i class="fas fa-check"></i> Advanced SEO</li>
+                <li><i class="fas fa-check"></i> CMS Integration</li>
+                <li><i class="fas fa-check"></i> 3 Months Free Maintenance</li>
+                <li><i class="fas fa-check"></i> 1 Month Deployment Free</li>
+                <li><i class="fas fa-times"></i> E-commerce Functionality</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+          </div>
+          <div class="price-card">
+            <div class="price-header">
+              <h3>Premium</h3>
+              <div class="price">₹20,000+</div>
+              <small>Custom pricing</small>
+            </div>
+            <div class="price-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                <li><i class="fas fa-check"></i> Responsive Design</li>
+                <li><i class="fas fa-check"></i> Advanced Forms</li>
+                <li><i class="fas fa-check"></i> Comprehensive SEO</li>
+                <li><i class="fas fa-check"></i> Custom CMS</li>
+                <li><i class="fas fa-check"></i> E-commerce Functionality</li>
+                <li><i class="fas fa-check"></i> 6 Months Free Maintenance</li>
+                <li><i class="fas fa-check"></i> 1 Month Deployment Free</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get Started</a>
+          </div>
+        </div>
+        <p class="pricing-note">
+          * Hosting & Domain charged annually. Customizations may affect final
+          pricing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Work</h2>
+          <p class="section-subtitle">See what we've created for our clients</p>
+        </div>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+          <button class="filter-btn" data-filter="ecommerce">Dynamic</button>
+          <button class="filter-btn" data-filter="dynamic">Premium</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="portfolio">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="{% static 'images/portfolio-1.jpg' %}"
+                  alt="Portfolio Website Example"
+                  onerror="this.style.display='none'"
+                />
+                <div class="image-placeholder">
+                  <i class="fas fa-image"></i>
+                </div>
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <a
+                      href="https://github.com/Rudrakshsachdev/Rudraksh.dev-portfolio"
+                      class="action-btn"
+                      aria-label="View project details"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://rudraksh-dev-portfolio.vercel.app/"
+                      class="action-btn"
+                      aria-label="Visit live website"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Portfolio Website</h3>
+                <p>
+                  This is a sleek portfolio website created for a professional
+                  developer. It showcases projects, skills, and accomplishments
+                  through a clean and modern layout. The site is fully
+                  responsive, offering a smooth, intuitive, and user-friendly
+                  experience on all devices. It demonstrates creativity,
+                  professionalism, and personal branding, making it ideal for
+                  highlighting expertise and achievements.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="ecommerce">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="{% static 'images/portfolio-2.png' %}"
+                  alt="E-commerce Website Example"
+                  onerror="this.style.display='none'"
+                />
+                <div class="image-placeholder">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <a
+                      href="https://github.com/Rudrakshsachdev/AIgnite_Website.git"
+                      class="action-btn"
+                      aria-label="View project details"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://aignitetech.vercel.app/"
+                      class="action-btn"
+                      aria-label="Visit live website"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Tech Club Website</h3>
+                <p>
+                  This is the official website of our tech club, created to
+                  connect, engage, and inspire members. The site highlights the
+                  club’s activities, events, projects, and achievements in a
+                  clean, organized, and user-friendly layout. Members can easily
+                  access resources, updates, announcements, and important
+                  information, ensuring they stay informed and involved. The
+                  website reflects the club’s commitment to fostering
+                  innovation, collaboration, and continuous learning in the
+                  field of technology, while providing a platform to showcase
+                  creativity, share knowledge, and celebrate accomplishments
+                  within the community.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="dynamic">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="{% static 'images/portfolio-3.jpg' %}"
+                  alt="Dynamic Website Example"
+                  onerror="this.style.display='none'"
+                />
+                <div class="image-placeholder">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="portfolio-overlay">
+                  <div class="portfolio-actions">
+                    <a
+                      href="https://github.com/Rudrakshsachdev/Gemini_Clone.git"
+                      class="action-btn"
+                      aria-label="View project details"
+                      ><i class="fas fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/posts/rudraksh-sachdeva-a35179326_ai-googlegemini-webdevelopment-activity-7337801940052955138--A_z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJAJYkBfyYkYTCSp87rxkUE5CbB9Bm07q0"
+                      class="action-btn"
+                      aria-label="Visit live website"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3>AI-Powered Gemini Clone</h3>
+                <p>
+                  This is an AI-powered Gemini clone that simulates core trading
+                  functionalities with smart insights. It provides features like
+                  market analysis, account management, and predictive trends to
+                  enhance user experience. The project demonstrates practical
+                  application of AI in financial platforms, showcasing both
+                  innovation and technical skills. Ideal for experimentation,
+                  learning, and highlighting expertise in building intelligent
+                  web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="process section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-subtitle">Our streamlined process for success</p>
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Consultation</h3>
+              <p>We discuss your needs, goals, and vision for the project</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Planning</h3>
+              <p>We create a detailed project plan and timeline</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Design</h3>
+              <p>We design mockups and prototypes for your approval</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Development</h3>
+              <p>We bring the design to life with clean, efficient code</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3>Testing</h3>
+              <p>We thoroughly test everything to ensure quality</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">06</div>
+            <div class="step-content">
+              <h3>Launch</h3>
+              <p>We deploy your website and provide training</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">
+            Ready to start your project? Get in touch!
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3>Email Us</h3>
+                <p>rpinnovations.info@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h3>Call Us</h3>
+                <p>+91 93547 12773</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="info-content">
+                <h3>WhatsApp</h3>
+                <p>+91 93547 12773</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Working Hours</h3>
+                <p>Mon - Fri: 9AM - 6PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            {% if success %}
+            <div class="alert alert-success">
+              Your message has been sent successfully!
+            </div>
+            {% endif %}
+            <form method="post" action="{% url 'homepage' %}" id="projectForm">
+              {% csrf_token %}
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone (optional)"
+                />
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="form-group">
+                <select name="service" required>
+                  <option value="" disabled selected>Select a Service</option>
+                  <option value="portfolio website">Portfolio Website</option>
+                  <option value="dynamic website">Dynamic Website</option>
+                  <option value="e-commerce website">E-commerce Store</option>
+                  <option value="custom solution">Custom Solution</option>
+                </select>
+                <i class="fas fa-cog"></i>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Tell us about your project"
+                  required
+                ></textarea>
+                <i class="fas fa-comment"></i>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <a href="#" class="footer-logo">R&P <span>Innovations</span></a>
+            <p>
+              We build websites that help businesses grow online. Affordable,
+              professional, and tailored to your needs.
+            </p>
+            <div class="social-links">
+              {% comment %}
+              <a href="#" aria-label="Visit our Facebook page"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Visit our Twitter profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              {% endcomment %}
+              <a href="https://www.instagram.com/rp_innovations_official?igsh=MTRqNzgxM3Bzand1cg==" aria-label="Visit our Instagram profile"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://chat.whatsapp.com/Izdr6dbHy9e8bCnBnNJpQG" aria-label="Visit our WhatsApp Community"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#services">Portfolio Websites</a></li>
+              <li><a href="#services">Dynamic Websites</a></li>
+              <li><a href="#services">E-commerce Stores</a></li>
+              <li><a href="#services">Custom Solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fas fa-envelope"></i>rpinnovations.info@gmail.com
+              </li>
+              <li><i class="fas fa-phone"></i> +91 9354712773</li>
+              <li><i class="fas fa-map-marker-alt"></i> Based in India</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 R&P Innovations. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="{% url 'privacy_policy' %}">Privacy Policy</a> | <a href="{% url 'terms_and_conditions' %}">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- Particles.js for hero background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
+</html>

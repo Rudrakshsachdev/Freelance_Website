@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | R&P Innovations</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/terms.css' %}">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1>Terms & Conditions</h1>
+      <div class="breadcrumb">
+        <a href="{% url 'homepage' %}"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Terms & Conditions</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <p class="effective-date"><strong>Effective Date:</strong> 5th September 2025</p>
+    <p>Welcome to <strong>R&P Innovations</strong>. Please read these terms carefully before using our website or services.</p>
+    
+    <div class="meta">
+      <span class="badge"><i class="fas fa-calendar"></i> Effective date: 5th September 2025</span>
+      <span class="badge"><i class="fas fa-map-marker-alt"></i> Jurisdiction: India</span>
+      <span class="badge"><i class="fas fa-envelope"></i> Contact: rpinnovations.info@gmail.com</span>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <a href="#intro"><i class="fas fa-star"></i> Introduction</a>
+      <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+      <a href="#use"><i class="fas fa-laptop"></i> Use of Website</a>
+      <a href="#ip"><i class="fas fa-copyright"></i> Intellectual Property</a>
+      <a href="#client"><i class="fas fa-user-tie"></i> Client Responsibilities</a>
+      <a href="#payments"><i class="fas fa-credit-card"></i> Payments & Refunds</a>
+      <a href="#liability"><i class="fas fa-balance-scale"></i> Limitation of Liability</a>
+      <a href="#links"><i class="fas fa-link"></i> Third-Party Links</a>
+      <a href="#changes"><i class="fas fa-sync-alt"></i> Changes to Terms</a>
+      <a href="#law"><i class="fas fa-gavel"></i> Governing Law</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+    </nav>
+
+    <section id="intro" class="callout" role="note">
+      <p><strong>Important:</strong> By accessing or using this website and our services, you agree to these Terms & Conditions. If you do not agree, please discontinue use.</p>
+    </section>
+
+    <section id="services">
+      <h2><i class="fas fa-cogs"></i> 1. Services</h2>
+      <p>We provide website development and related freelancing services as described on our website or as otherwise agreed with clients through proposals, emails, or written agreements.</p>
+    </section>
+
+    <section id="use">
+      <h2><i class="fas fa-laptop"></i> 2. Use of Website</h2>
+      <ul>
+        <li>You agree to use this website only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment.</li>
+        <li>You shall not attempt to interfere with the proper working of the website, introduce malware, or bypass security features.</li>
+      </ul>
+    </section>
+
+    <section id="ip">
+      <h2><i class="fas fa-copyright"></i> 3. Intellectual Property</h2>
+      <ul>
+        <li>All content on this website (including text, design, layouts, graphics, and code) is owned by or licensed to <strong>R&P Innovations</strong> unless otherwise stated.</li>
+        <li>You may not copy, reproduce, distribute, or create derivative works from our content without prior written permission.</li>
+      </ul>
+    </section>
+
+    <section id="client">
+      <h2><i class="fas fa-user-tie"></i> 4. Client Responsibilities</h2>
+      <ul>
+        <li>Clients must provide accurate project requirements, content, brand assets, and approvals in a timely manner.</li>
+        <li>Delays in providing inputs or approvals may extend project timelines.</li>
+      </ul>
+    </section>
+
+    <section id="payments">
+      <h2><i class="fas fa-credit-card"></i> 5. Payments & Refunds</h2>
+      <ul>
+        <li>Project fees and milestones will be agreed upon before work begins and documented in a proposal or invoice.</li>
+        <li>Payments are due as per the agreed schedule. Late payments may pause work or incur fees where specified.</li>
+        <li>Once a project or milestone is delivered, refunds are generally not provided, except at our sole discretion.</li>
+      </ul>
+    </section>
+
+    <section id="liability">
+      <h2><i class="fas fa-balance-scale"></i> 6. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, or consequential damages arising from your use of the website or services, including but not limited to loss of profits, data, or business opportunities. We are not responsible for delays or issues caused by factors beyond our reasonable control.</p>
+    </section>
+
+    <section id="links">
+      <h2><i class="fas fa-link"></i> 7. Third-Party Links</h2>
+      <p>Our website may contain links to third-party websites. We do not control and are not responsible for the content, privacy practices, or services of those third parties. Accessing third-party sites is at your own risk.</p>
+    </section>
+
+    <section id="changes">
+      <h2><i class="fas fa-sync-alt"></i> 8. Changes to Terms</h2>
+      <p>We may update these Terms & Conditions from time to time. Changes will be posted on this page with a revised effective date. Your continued use of the website following the posting of changes constitutes acceptance of those changes.</p>
+    </section>
+
+    <section id="law">
+      <h2><i class="fas fa-gavel"></i> 9. Governing Law</h2>
+      <p>These Terms & Conditions are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+    </section>
+
+    <section id="contact" class="contact-info">
+      <h2><i class="fas fa-envelope"></i> 10. Contact Us</h2>
+      <p>For any questions regarding these Terms & Conditions, please contact:</p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:rpinnovations.info@gmail.com">rpinnovations.info@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> Phone: +91 9354712773</p>
+      <p><i class="fas fa-map-marker-alt"></i> Registered Address: Based in India</p>
+    </section>
+
+    <div class="footer">
+      <span>Last updated: 5th September 2025</span>
+      <div>
+        <a class="btn" href="/privacy-policy" rel="noopener"><i class="fas fa-shield-alt"></i> View Privacy Policy</a>
+        <a class="btn" href="/" rel="noopener"><i class="fas fa-home"></i> Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <button class="print-button" id="printButton">
+    <i class="fas fa-print"></i>
+  </button>
+
+  <script src="{% static 'js/terms.js' %}"></script>
+    
+  
+</body>
+</html>
